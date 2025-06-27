@@ -13,7 +13,8 @@ int main() {
 
     printf("Enter your height: ");
     scanf("%f", &height);
-
+    getchar(); // Clear the newline character left by scanf
+    // Remove trailing newline from name
     printf("Your name is %s", name);
     printf("Your age is %d\n", age);
     printf("Your height is %f\n", height);
