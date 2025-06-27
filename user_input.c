@@ -1,21 +1,22 @@
 #include<stdio.h>
-int main(){
 
-int age;
-char name[50];
-float height;
-printf("enter your name");
-scanf("%s", name);
+int main() {
+    int age;
+    char name[50];
+    float height;
 
-printf("Enter your age: ");
-scanf("%d", &age);
+    printf("Enter your full name: ");
+    fgets(name, sizeof(name), stdin); // Reads full name including spaces
 
-printf("enter your height");
-scanf("%f", &height);
+    printf("Enter your age: ");
+    scanf("%d", &age);
 
-printf("your name is %s\n",name);
-printf("yor age is %d\n ",age);
-printf("yor height is %.2f\n ",height);
+    printf("Enter your height: ");
+    scanf("%f", &height);
+
+    printf("Your name is %s", name);
+    printf("Your age is %d\n", age);
+    printf("Your height is %f\n", height);
+
     return 0;
-
 }
