@@ -5,17 +5,20 @@ int main(){
     float num2 = 10;
     float sum_add, sum_sub, sum_mul, sum_div;
     int sum_mod;
+    int sum_ad;
 
     sum_add = num1 + num2;
     sum_sub = num1 - num2;
     sum_mod = (int)num1 % (int)num2;
     sum_mul = num1 * num2;
     sum_div = num1 / num2;
+    sum_ad = sum_add++;
 
     printf("Addition: %.2f\n", sum_add);
     printf("Subtraction: %.2f\n", sum_sub);
     printf("Modulus: %d\n", sum_mod);
     printf("Multiplication: %.2f\n", sum_mul);
     printf("Division: %.2f\n", sum_div);
+    printf("sum incremented: %.2f\n", sum_ad);
     return 0;
 }
