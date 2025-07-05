@@ -37,7 +37,7 @@ case '%':
     result = (int)num1 % (int)num2;
     break;
 default:
-printf("YOU HAVE N=ENTERED A WRONG INPUT");
+printf("YOU HAVE NENTERED A WRONG INPUT");
     break;
 }
 printf("Result is %.1lf",result);
