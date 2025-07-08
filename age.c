@@ -1,4 +1,5 @@
-e<stdbool.h>
+#include <stdio.h>  
+#include<stdbool.h>
 
 bool agecheck(int age){
     if (age <= 18){
@@ -11,10 +12,11 @@ bool agecheck(int age){
 int age = 21;
 
 int main() {
-    if (agecheck(age)) {    
-        printf("You are 18 or younger.\n");
+    if (agecheck(age)) {
+        printf("You have to become 18+ old.\n");
+        
     } else {
-        printf("You are older than 18.\n");
+        printf("You sign up to the account.\n");
     }
     return 0;
 }
