@@ -2,8 +2,8 @@
 
  
 int square (int num ){
-    int result = num * num;
-    return result;
+    //int result = 
+    return num * num;;
 }
 int main() {
  int x=square(2);
